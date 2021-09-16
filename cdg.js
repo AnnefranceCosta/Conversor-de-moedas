@@ -3,7 +3,14 @@ function Converter(){
     var valor = valorElemento.value;
     var valorEmDolarNumerico = parseFloat(valor);
 
-   console.log(valorEmDolarNumerico); 
+   
+
+   var valorEmReal = valorEmDolarNumerico * 5;
+   
+
+   var elementoValorConvertido = document.getElementById("valorConvertido")
+   var valorConvertido = "Resultado em real é R$ " + valorEmReal;
+   elementoValorConvertido.innerHTML = valorConvertido;
 }
 
-console.log("passei por aqui");
+
